@@ -452,6 +452,7 @@ MonoBehaviour:
   - {fileID: 47266118}
   shopButton: {fileID: 514883412}
   settingsButton: {fileID: 904697823}
+  playButton: {fileID: 170206861}
   menuCoin: {fileID: 2136756309}
   shopCoin: {fileID: 419923426}
 --- !u!1 &223676592

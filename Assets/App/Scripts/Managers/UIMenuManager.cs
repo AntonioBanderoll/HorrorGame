@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIMenuManager : MonoBehaviour
@@ -16,7 +17,7 @@ public class UIMenuManager : MonoBehaviour
     [SerializeField] private Button[] homeButtons;
     [SerializeField] private Button shopButton;
     [SerializeField] private Button settingsButton;
-   // [SerializeField] private Button levelsButton;
+    [SerializeField] private Button playButton;
     
     
     [Space] [Header("TxtInfo")]
@@ -39,7 +40,10 @@ public class UIMenuManager : MonoBehaviour
         
         shopButton.onClick.AddListener((() => OpenView(shop)));
         settingsButton.onClick.AddListener((() => OpenView(settings)));
-        //levelsButton.onClick.AddListener((() => OpenView(levels)));
+        playButton.onClick.AddListener((() =>
+        {
+            SceneManager.LoadScene(1);
+        }));
     }
     
     void Home()
